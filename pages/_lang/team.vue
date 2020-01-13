@@ -5,53 +5,79 @@
       .about-introduce-list
         ul
           li(
-            v-for="n in 7"
-            :key="n"
+            v-for="(item, index) in $t(`team.technology.list`)"
+            :key="index"
           )
             .about-introduce-list-avatar
-              img(:src="require(`~/assets/members/a${n}.png`)")
-              .about-introduce-list-name-hover {{ $t(`team.technology.list.${n - 1}.name`) }}
-            .about-introduce-list-detail {{ $t(`team.technology.list.${n - 1}.intro`) }}
+              //- img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
+              // .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-name {{ item.name }}
+            .about-introduce-list-post {{ item.post }}
+            .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
+    .about-banner
+      div {{ $t('team.banner') }}
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
       .about-introduce-list
         ul
           li(
-            v-for="n in 4"
-            :key="n"
+            v-for="(item, index) in $t('team.business.list')"
+            :key="index"
           )
             .about-introduce-list-avatar
-              img(:src="require(`@/assets/members/b${n}.png`)")
-              .about-introduce-list-name-hover {{ $t(`team.business.list.${n - 1}.name`) }}
-            .about-introduce-list-detail {{ $t(`team.business.list.${n - 1}.intro`) }}
+              // img(:src="require(`@/assets/members/b${index + 1}.png`)")
+              //- img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
+              // .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-name {{ item.name }}
+            // .about-introduce-list-detail {{ item.intro }}
+            .about-introduce-list-post {{ item.post }}
+            .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
     .about-introduce
       .page-title {{ $t('team.consultant.title') }}
       .about-introduce-list
         ul.consult
           li(
-            v-for="n in 6"
-            :key="n"
+            v-for="(item, i) in $t('team.consultant.list')"
+            :key="i"
           )
             // .about-introduce-list-avatar
               img(:src="require(`@/assets/members/con${n - 1}.jpg`)")
-            .about-introduce-list-name {{ $t(`team.consultant.list.${n - 1}.name`) }}
-            .about-introduce-list-detail {{ $t(`team.consultant.list.${n - 1}.intro`) }}
+            .about-introduce-list-name {{ item.name }}
+            .about-introduce-list-post
+            .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
+            // .about-introduce-list-detail {{ $t(`team.consultant.list.${n - 1}.intro`) }}
 </template>
 <script>
 export default {
-   head: {
-    title: '初链团队-初链TrueChain',
-    meta: [
-      { hid: 'team-keyword', name: 'keyword', content: '初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才' },
-      { hid: 'team-description', name: 'description', content: '初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。' },
-    ]
-  },
+  head () {
+    return {
+      title: this.$t('team.head.title'),
+      meta: [
+        { hid: 'team-keyword', name: 'keywords', content: this.$t('team.head.keywords') },
+        { hid: 'team-description', name: 'description', content: this.$t('team.head.description') }
+      ]
+    }
+  }
 }
 </script>
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
+@media screen and (max-width 1024px)
+  .about-introduce-list
+    ul
+      justify-content center
+.about-banner
+  text-align center
+  div
+    color white
+    font-size 28px
+    padding 20px
+    width 60%
+    margin 0 auto 30px
+    background $font-dark
+    // box-shadow 2px 2px red 2px
+    box-shadow 0px 5px 5px rgba(11,23,73,0.15)
 .about-container
   padding 100px 20px 40px
   .page-title.photo-header
@@ -68,6 +94,7 @@ export default {
   ul
     display flex
     align-items baseline
+    // justify-content center
     flex-wrap wrap
     padding 0px
     li
@@ -81,7 +108,7 @@ export default {
         .about-introduce-list-name-hover
           opacity 1
       .about-introduce-list-avatar
-        wh(100%, 200px)
+        // wh(100%, 200px)
         border-radius 50%
         overflow hidden
         position relative
@@ -97,14 +124,29 @@ export default {
         opacity 0
         transition all .5s ease
       .about-introduce-list-name
-        padding 25px 0 15px
+        padding 25px 0 5px
         font-size 20px
         color $font-dark
+        text-align center
+      .about-introduce-list-post
+        margin 10px 0
+        color $font-dark
+        font-weight bold
         text-align center
       .about-introduce-list-detail
         font-size 12px
         line-height 22px
         color #456C99
+        position relative
+        &:after
+          content ''
+          width 4px
+          height  4px
+          position absolute
+          left -10px
+          top 7px
+          border-radius 50%
+          background-color $font-dark
 .about-honor
   display flex
   justify-content center

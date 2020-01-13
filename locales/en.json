@@ -1,56 +1,155 @@
 {
   "language": "EN",
-  "newsRouter":{
-    "technical": "Technical trends",
-    "biz": "Business trends",
-    "title": "NEWS"
+  "linksList": [{
+      "name": "twitter",
+      "icon": "icon font_family icon-twitter",
+      "link": "https://twitter.com/truechaingroup/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-telegram",
+      "link": "https://t.me/truechainglobal"
+    },
+    {
+      "name": "facebook",
+      "icon": "icon font_family icon-facebook",
+      "link": "https://www.facebook.com/TrueChaingroup/"
+    },
+    {
+      "name": "reddit",
+      "icon": "icon font_family icon-reddit",
+      "link": "https://www.reddit.com/r/truechain/"
+    },
+    {
+      "name": "medium",
+      "icon": "icon font_family icon-medium",
+      "link": "https://medium.com/@truechaingroup"
+    },
+    {
+      "name": "youtube",
+      "icon": "icon font_family icon-youtube",
+      "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
+    }
+  ],
+  "footerLinkDescr": "TrueChain Official SNS Platform",
+  "footerDownDescr": "TrueChain Light Wallet  APP Download",
+  "footer":{
+    "miningGuideText":"TrueChain mining guide",
+    "mingBtns":[
+      {
+        "text":"Mining",
+        "link":"http://doc.truechain.pro/center/1098768"
+      }
+    ]
   },
   "home": {
-    "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
+    "head": {
+      "title": "初链TrueChain－Next Generation Public Blockchain with Hybrid Consensus.",
+      "keywords": "初链, TRUE,初链币, TrueChain, truechain, blockchain, TRUE币, Hybrid Consensus, 第三代公链, 初链官网, Pow+pbft, CCTV, Eric Zhang, 刘洋, DApp",
+      "description": "TrueChain is committed to be the next generation of blockchain infrastructure. It is the world's first public chain adopting the fPow+ PBFT hybrid consensus that has a strong global open source developer community supporting it. TrueChain provides the underlying public blockchain support with high performance and high security for decentralized application (DApp) and global asset circulation."
+    },
+    "adVideoTitle":"INTRODUCTION",
+    "adVideoLink":"https://qiniu.truescan.net/video/ad-en.mp4",
+    "slogan": "Truly Fast, Permissionless, Secure and Scalable",
+    "slogan1": "PBFT-fPoW hybrid consensus permissionless blockchain with global developer community",
     "white": "WHITE PAPER",
+    "whiteLink": "https://qiniu.truescan.net/pdf/whitepaper-en.pdf",
     "yellow": "YELLOW PAPER",
+    "yellowLink": "https://qiniu.truescan.net/pdf/yellowpaper-en.pdf",
+    "mainNet": "MAIN NET",
     "banner2": {
-      "title":"The True Light Wallet APP",
-      "line1":"Public beta version",
-      "line2":"Scan QR code to download"
+      "title": "The True Light Wallet APP",
+      "line1": "Public beta version",
+      "line2": "Scan QR code to download"
     },
-    "banner3":{
-      "title":"Priority Nodes Election",
-      "line1":"4000 Standard Nodes&100 Master Nodes",
-      "line2":"3000w TRUE as rewards",
-      "btntext":"See details"
+    "banner3": {
+      "title": "Priority Nodes Election",
+      "line1": "4000 Standard Nodes&100 Master Nodes",
+      "line2": "3000w TRUE as rewards",
+      "btntext": "See details"
     },
-    "superiority": [
-      {
-        "icon": "icon font_family icon-te",
-        "title": "Highly Performant Blockchain Infrastructure",
-        "detail":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
+    "superiority": [{
+        "icon": "icon font_family icon-jiejue",
+        "title": "Tackles the Obstacles of permissionless blockchain",
+        "detail": "The conflict between  efficiency and decentralization for permissionless blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
-        "icon": "icon font_family icon-te1",
-        "title": "Smart Contracts with Business Logistics",
-        "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+        "icon": "icon font_family icon-tianchengzuo",
+        "title": "Ensures  Decentralization and Fairness",
+        "detail": "Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of permissionless blockchain."
       },
       {
-        "icon": "icon font_family icon-te2",
-        "title": "Usable Developing Toolkit",
-        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain DApp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
+        "icon": "icon font_family icon-gongshijizhi",
+        "title": "The First  Hybrid Consensus Incentive Model",
+        "detail": "TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
+      },
+      {
+        "icon": "icon font_family icon-jizhi",
+        "title": "Stable and Low Gas Fee Mechanism",
+        "detail": "Zero gas fee is impossible for permissionless blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
+      },
+      {
+        "icon": "icon font_family icon-shequ",
+        "title": "Strong Global Developer Community",
+        "detail": "Among the new generation of permissionless blockchain, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
+      },
+      {
+        "icon": "icon font_family icon-chanpin",
+        "title": "Open Sourced Grid of Products",
+        "detail": "TrueChain brings a grid of products that support the hybrid consensus permissionless blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW.",
-      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of PoW to ensure the whole chain to be decentralized and therefore secure.",
-      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow regular users to participate in mining more fairly, and re-assure complete decentralization.",
-      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to develop and deploy decentralized applications easily and quickly.",
-      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc.",
-      "p5": "The leading research and engineering team members of True Chain come from the U.S., India and China.",
-      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government. "
+      "subhead": "TrueChain is committed to be the next generation of blockchain infrastructure. It is the world's first public chain implemented the fPow+ PBFT hybrid consensus that has a strong global open source developer community supporting it. TrueChain provides the underlying public blockchain support with high performance and high security for decentralized application (DApp) and global asset circulation.",
+      "contentList": [
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency.",
+        "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability.",
+        "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public.",
+        "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented.",
+        "The team of TrueChain is international with its members from  the United States, Vietnam，South Korea，China ,European etc."
+      ]
     },
     "roadmap": {
       "title": "ROAD MAP",
-      "list": [
-        {
+      "content": [
+        "2017.9 - 2018.10",
+        "TrueChain’s white paper v1.0 released",
+        "TrueChain’s PBFT consortium chain released",
+        "TrueChain technical yellow paper v1.0 released",
+        "Hybrid consensus mechanism design completed",
+        "Stellar - smart contract management engine - released and open sourced",
+        "TrueChain’s engineering roadmap released on github",
+        "TrueChain Light Wallet released",
+        "TrueChain’s election system for decentralized nodes released",
+        "TrueChain has been listed on OKex, ZB, Bithumb, HitBTC and many other major exchanges",
+        "Globally TrueChain’s token holder exceeds 100k",
+        "Hybrid consensus framework code open source",
+        "TrueChain Foundation Board of Directors Elected",
+        "Hybrid consensus incentives release",
+        "TrueChain technical yellow paper v2.0 released",
+        "TrueChain TestNet - BetaNet released",
+        "TrueChain’s First Blockchain Explorer TrueScan launched",
+        "Developer platform released",
+        ">10 Dapps running and testing on TrueChain BetaNet",
+        "2018.11 - 2019.12",
+        "Design PandaST Protocol",
+        "Implement 3rd-party gas payment agent",
+        "Main Net Launch",
+        "Reform gas fee mechanism",
+        "Reform public chain incentive model",
+        "Increase and stabilize mining hash power for main net to ensure high-level security",
+        ">100 Dapps & Asset tokens on TrueChain",
+        ">10 Million USD asset value issued on TrueChain",
+        ">500k TRUE token holders globally",
+        "Add Zero-knowledge Proof and related privacy features",
+        "2020 Onwards",
+        ">1000 Dapps & Asset tokens on TrueChain and keep fast growth",
+        ">1 Billion USD asset value issued on TrueChain and keep fast growth",
+        ">1 Million TRUE token holders globally and keep fast growth",
+        "Decentralized governance"
+      ],
+      "list": [{
           "time": "2018-01",
           "events": ["TrueChain’s white paper released"]
         },
@@ -80,147 +179,284 @@
         },
         {
           "time": "2018-09",
-          "events": ["TrueChain mainnet launch （only open to priority nodes）"]
+          "events": [" TrueChain mainnet launch (only open to priority nodes) "]
         },
         {
-          "time": "2018-12",
-          "events": ["Hybrid consensus sharding launch"]
+          "time": "2018-Q4",
+          "events": ["Late October: smart contract platform launch"]
         },
         {
-          "time": "2019-03",
-          "events": ["Mainnet open to all nodes"]
+          "time": "2019-Q1",
+          "events": ["TrueChain mainnet launch"]
+        },
+        {
+          "time": "2019-Q2",
+          "events": ["The launch of sharding, storage solution, easy Dapp (Beta version)"]
+        },
+        {
+          "time": "2019-Q3",
+          "events": ["Comprehensively promote solutions in easy Dapp industry and sharding industry"]
         }
       ]
     },
     "partner": "PARTNER",
-    "institution": "INVESTMENT INSTITUTION",
-    "news":{
-      "title":"NEWS",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"TrueChain shows on CCTV6 to boost real economy"
+    "institution": "INVESTORS",
+    "exchanges": "EXCHANGES",
+    "news": {
+      "title": "NEWS",
+      "technical": "Technical trends",
+      "biz": "Business trends",
+      "list": [{
+          "time": "2018-05-24",
+          "title": "TrueChain shows on CCTV6 to boost real economy"
         },
         {
-          "time":"2018-05-23",
-          "title":"Blockchain technology will revolutionize many industries"
+          "time": "2018-05-23",
+          "title": "Blockchain technology will revolutionize many industries"
         },
         {
-          "time":"2018-05-20",
-          "title":"TrueChain contributed to blockchain whitepaper by MIIT"
+          "time": "2018-05-20",
+          "title": "TrueChain contributed to blockchain whitepaper by MIIT"
         }
       ]
     }
   },
   "name": "TrueChain",
   "copyright": "(truechain) Official website All rights reserved",
+  "footerContactUs":"Contact Us",
   "nav": {
+    "deer":"DEVELOPER",
     "git": "GITHUB",
+    "developer": "DEVELOPER",
+    "document":"DOCUMENT",
     "blog": "BLOG",
     "team": "TEAM",
     "news": "NEWS",
     "join": "JOIN US",
     "node": "NODE",
+    "reward": "BOUNTY",
+    "webwallet":"WALLET",
     "english": "EN"
   },
   "news": {
-    "title": "news"
+    "head": {
+      "title": "TrueChain news-TrueChain Updates, TrueChain posts",
+      "keywords": "TrueChain news-TrueChain flash, digital currency news, TRUE",
+      "description": "TrueChain news section provides real-time information about TrueChain, news and real-time information in the field of blockchain."
+    },
+    "title": "news",
+    "point": "This category have nothing data",
+    "technical": "News trends",
+    "biz": "Business trends"
   },
   "partner": {
     "title": "partner"
   },
   "team": {
+    "head": {
+      "title": "TrueChain team-TrueChain",
+      "keywords": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
+      "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
+    },
+    "banner": "With 2000+ developers from the world",
     "technology": {
-      "title": "TECHNOLOGY",
-      "list": [
-        {
+      "title": "Research and Developers Community",
+      "list": [{
           "name": "Eric Zhang",
-          "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world."
+          "post": "CEO",
+          "imgSrc": "jiannan",
+          "introList": [
+            "M.S. In Computer Science, Oxford University",
+            "Founder of DoraHacks ",
+            "Researcher, CERN Open Lab (2013)"
+          ]
         },
         {
-          "name": "Archit Sharma",
-          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Hackathon champions."
+          "name": "Dylan Liu",
+          "post": "CTO",
+          "imgSrc": "liuyang",
+          "introList": [
+            "B.S. & M.S. Computer Science, Tsinghua University",
+            "10+years experience in development and system architecture",
+            "Cryptography and algorithms expert"
+          ]
         },
         {
-          "name": "Home Chen",
-          "intro": "TrueChain’s CTO in the greater China area. Home Chen has worked in IT industry for 20 years. He has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+          "name": "Kenny Zhou",
+          "post": "Product Team Lead",
+          "imgSrc": "qingsong",
+          "intro": "",
+          "introList": [
+            "Former co-founder &CTO at the Honest Doctor ",
+            "More than 10 years of experience in large-scale distributed systems and architectures and products"
+          ]
         },
         {
           "name": "Felix Cai",
-          "intro": "The front-end product leader of TrueChain, also a front-end geek. Felix Cai graduated from Xi'an Jiao Tong University youth class."
+          "post": "Front - end Engineering Lead",
+          "imgSrc": "zhenchuan",
+          "introList": [
+            "Youth Class, Xi’an Jiaotong University",
+            "Front - end Hacker",
+            "First Prize, DoraHacks Autumn@Xi An 2017"
+          ]
         },
         {
           "name": "Ice Ming",
-          "intro": "Golang engineer,over 10 years experience in c/c++ development, responsible for bid projects, has strong learning ability, has the full package of project experience in real-time database products and digital currency transaction platform products. He has participated in developing bitcoin and ethereum wallets."
-        },
-        {
-          "name": "Liu Yang",
-          "intro": "Got his bachelor's and master's degree in Tsinghua University. He has over 10 years’ experience in development and system architecture. He is an expert at cryptography and building algorithms. He is responsible for the research and development of hybrid consensus and POW of TrueChain."
+          "post": "Integration lead",
+          "imgSrc": "tianming",
+          "introList": [
+            "10+years experience in c/c++ development",
+            "Real time database products and digital currency transaction platform products expert",
+            "Participated in developing bitcoin and ethereum wallets"
+          ]
         },
         {
           "name": "Seay (Wizard)",
-          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experience of more than ten years in security attack and defense and served for several well-known enterprises."
+          "post": "Security Coordinator",
+          "imgSrc": "fashi",
+          "introList": [
+            "Lead, Alibaba attack and security lab",
+            "Author of “Code Audit: Architecture of Enterprise Web Security”",
+            "Host of well-known security blog cnseay.com"
+          ]
+        },
+        {
+          "name": "Neol Zeng",
+          "post": "Senior R&D Director",
+          "imgSrc": "biyun",
+          "introList": [
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
+          ]
+        },
+        {
+          "name": "Brian Liu",
+          "post": "Blockchain evangelist",
+          "imgSrc": "liupeng",
+          "introList": [
+            "MSc and B.S from Peking University",
+            "Author of \"Blockchain: 101\"",
+            "10+ working year experience in software development, leading and coaching high performing teams",
+            "Worked in IBM China Development Lab (CDL) High Performance Computing team and \"LERO - The Irish Software Engineering Research Center\" Distributed Systems research group"
+          ]
         }
       ]
     },
     "business": {
-      "title": "BUSINESS",
-      "list": [
-        {
-          "name": "Xiaoyong Cheng",
-          "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong Cheng is a serial entrepreneur, executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
-        },
-        {
-          "name": "Hongyi Zheng",
-          "intro": "TrueChain’s Chief Operating Officer, mainly responsible for DApp business cooperation and development. Hongyi Zheng is the founder of Micro-Blocks and Smart Web Loan. He was the former Chief Operation Officer of the software release center of Kaspersky, the CEO of Zhuoxin group, CEO of Anhe Foundation, and the operation head of the Monternet business of China Mobile. He graduated from Harbin Institute of Technology. "
+      "title": "Community and development",
+      "list": [{
+          "name": "James Cheng",
+          "post": "Head of Strategic Development",
+          "imgSrc": "xiaoyong",
+          "introList": [
+            "Part-time research staff of Tsinghua University, Serial entrepreneur",
+            "Executive Committee of China Cloud System Pioneer Strategic Alliance",
+            "Foreign Expert of Thailand Crypto Beach Association"
+          ]
         },
         {
           "name": "Larry Lin",
-          "intro": "The co-founder of TrueChain, chief development officer. Larry Lin is an expert of Internet marketing and community operation. He has been responsible for the operation of ‘Baidu encyclopedia’, which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+          "post": "Head of Business Development",
+          "imgSrc": "daliang",
+          "introList": [
+            "Internet marketing community operation expert",
+            "Baidu encyclopedia operation",
+            "10+years of digital advertising and internet industry"
+          ]
         },
         {
-          "name": "Yan Liu",
-          "intro": "TrueChain’s chief operation officer. He is responsible for TrueChain products and business operations, as well as TrueChain’s community building and operation."
+          "name": "Jimmy Zhao",
+          "post": "TrueChain Global Strategic Partner",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZB group executive and founder of ZBX (ZB Europe)",
+            "Founder of Cryptonord",
+            "Partner of Y investment",
+            "Founder of ChainX",
+            "Runs a 10,000-bitcoin fund",
+            "A well-known core figure in the blockchain industry in Europe"
+          ]
+        },
+        {
+          "name": "Hillary Nguyen",
+          "post": "TrueChain Vietnamese Partner",
+          "imgSrc": "hillarynguyen",
+          "introList": [
+            "Managing partner of Alphawhale Capital.",
+            "A Strategist, Advisor, Communicator, Consultant, community influencer and Speaker in Blockchain, Digital asset management.",
+            "With diverse set of skills, Hillary executes her management role effectively into the new foundation of company in revolution."
+          ]
+        },
+        {
+          "name": "Paulus Pham",
+          "post": "TrueChain Vietnamese Partner",
+          "imgSrc": "paulaspham",
+          "introList": [
+            "Blockchain community management professional ",
+            "Managers of some major blockchain user community in Vietnam"
+          ]
+        },
+        {
+          "name": "Sun-Woo Chu",
+          "post": "TrueChain Strategic partner of Korea",
+          "imgSrc": "qiutingnan",
+          "introList": [
+            "Vice President, Korea International Finance Association",
+            "Element Founder & CEO",
+            "former Money Today Innovation Strategy Team Asia Chief",
+            "former One Asia Editor-in-Chief",
+            "former Asia Today Multimedia Desk Editor/International Editor"
+          ]
+        },
+        {
+          "name": "Pingping Wang",
+          "post": "TrueChain Strategic partner of Korea",
+          "imgSrc": "wangpingping",
+          "introList": [
+            "Element Director, China Business",
+            "Money Today Innovation Strategy Team Reporter",
+            "One Asia Reporter",
+            "Asia Today Multimedia Desk & International Reporter"
+          ]
         }
       ]
     },
     "consultant": {
-      "title": "CONSULTANT",
+      "title": "Advisors",
       "list": [
         {
-          "name": "Xianhua Wei",
-          "intro": "The professor and PhD tutor of Chinese Academy of Sciences. Xianhua Wei is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
+          "name": "Lin ChuiZhou",
+          "intro": "",
+          "introList": [
+            "Academician consultant of TrueChain",
+            "Academician of the Royal Swedish Academy of Sciences and Hong Kong Academy of Engineering Sciences",
+            "Former vice — principal of Hong Kong University of Science and technology and a former president of Industrial Technology Research Institute.",
+            "Former Visiting professor of National University of Singapore,Tsinghua University, University of Science and Technology of China, Shanghai Jiaotong University and many prestigious Institutions at home and abroad."
+          ]
         },
         {
-          "name": "Jamie Cooper",
-          "intro": "Global intellectual property legal expert, the professor of California Western School of Law, chairman of Proyecto ACCESO foundation project, former United States State Department, American Development Bank, American patent and Trademark Office consultant, United States representative of the world intellectual property organization."
-        },
-        {
-          "name": "Jinglong Zhou",
-          "intro": "The former partner of the GWC, which is the world's largest Internet Organization. He has a wide range of connections and resources of Internet industry and governments all over the world."
-        },
-        {
-          "name": "Jun Zou",
-          "intro": "The author of best seller \"block chain technology guide\", also an expert of Zhongguancun block chain industry alliance. He is a PhD in Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
-        },
-        {
-          "name": "Yu Zhu (binke)",
-          "intro": "The head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
-        },
-        {
-          "name": "Xiong Li",
-          "intro": "The founder of LianXiang Finance and Economics."
+          "name": "Yushi Shen",
+          "introList": [
+            "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
+            "BS, Electronic Engineering, Tsinghua University",
+            "MA, PH.D, computer science, University of California, San Diego",
+            "Panelist for China’s “the Thousand Talents Plan”",
+            "Researcher of Tsinghua and other prestigious universities",
+            "Strategic consultant for Microsoft"
+          ]
         }
-
       ]
     }
   },
-  "honor": {
-    "title": "honor",
-    "text1": "TrueChain was approved of the License for the China Cloud System Industrial Innovation Strategic Alliance On the morning of May 20, 2018, the co-founder of TrueChain, Cheng Xiao Yong, received the committee member institutional license of China Cloud System Industrial Innovation Strategic Alliance awarded by the Ministry of Industry and Information Technology.",
-    "text2": "TrueChain becomes a member of the National Chain Network Innovation Center The chairman of the center is Xie Ping. He was the deputy general manager of the former China Investment Co., Ltd. (Deputy ministerial level) , the director of the former Central Bank Financial Stability Bureau, the former director of the Central Bank Research Bureau and the head of the Central Bank Financial Research Institute ."
-  },
   "join": {
+    "head": {
+      "title": "TrueChain recruitment website",
+      "keywords": "TrueChain, TRUE, recruitment website,blockchain, blockchain employee, digital currency",
+      "description": "TrueChain welcome more people come to join us."
+    },
     "title": "JOIN US",
     "intro": "Welcome the creative, passionate and sincere you to join us, Sail with us!",
     "p1": "Once you join us, you will get training while working. You will benefit from the accumulated professional experience from us. Join us and you will be added in the TrueChain employee career development training program.",
@@ -232,8 +468,7 @@
     "requireNum": "Demand amount",
     "salary": "Salary",
     "email": "Resume delivery",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "Go development engineer"
@@ -249,8 +484,7 @@
         "job": "Investor Relations Director"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "Go development engineer",
         "duty": [
           "Use Go language to design and develop the TrueChain product.",
@@ -302,6 +536,22 @@
     ]
   },
   "node": {
+    "head": {
+      "title": " Announcement| TrueChain priority nodes election releases result ",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
+      "keywords": "TrueChain,TRUE, nodes election, super nodes, blockchain, digital currency",
+      "description": "TrueChain will select no more than 4000 priority standard nodes (POW) and no more than 100 priority master nodes (PBFT+POW) by votes before the test main network released in September."
+    },
+    "result": "result",
+    "notPass": "(Failed)",
     "title": "Priority Nodes Election Enrollment",
     "StandardSum": "Registry for Standard Nodes",
     "nodeFullSum": "Registry for Master Nodes",
@@ -309,7 +559,7 @@
     "personalCampaign": "Individual Participants",
     "teamCampaign": "Team Participants",
     "timeDownCampaign": "Priority Nodes Election Countdown",
-    "nodeRank": "Priority Nodes Ranking",
+    "nodeRank": "Priority Nodes Result",
     "nodeStandard": "Standard Nodes",
     "nodeFull": "Master Nodes",
     "tableRank": "Rank",
@@ -323,5 +573,89 @@
     "hour": "Hour",
     "minute": "Minute",
     "second": "Second"
+  },
+  "bugfinder":{
+    "testPlan":"Testing Range",
+    "rewardPlan":"Reward Plan",
+    "submitBug":"Submit Plan",
+    "highestRewardLabel":"Highest",
+    "pageTitle":"True Chain",
+    "pageDescr":"TrueChain is a truly fast, permissionless, secure and scalable blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community.",
+    "seriousBugLabel":"Serious Bugs",
+    "seriousBugText1":"Bugs that can directly obtain the limit of operation server and significant data, including but not limited to Arbitrary command execution, uploading webshell, Arbitrary code execution, large amounts of data from SQL injection. ",
+    "seriousBugText2":"Logic bugs that seriously affect the security of system operation, including but not limited to arbitrary account password reset, the modification of bugs, a large number of bugs that obtain user identity authentication information, unauthorized access bugs, unauthorized access to the background management system, and so on. ",
+    "seriousBugText3":"The divarication can be caused by certain means; ",
+    "seriousBugText4":"Currently, a large-scale security bugs are breaking out, which need enough attention ",
+    "highRiskBugLabel":"High Risk Bugs",
+    "highRiskBugText":"Business operation can be seriously affected by certain means, and may bring huge losses to customers, such as key business operation can be Dos, login interface can be attacked and business system can be easily used by bonus hunter.\nBugs of User ID need to obtain by user interaction, including conventional storage/reflection XSS vulnerabilities, CSRF bugs of core business operations, etc.\nRandom document read / modify / cover / delete / download;\nModifying user profiles, personal information, and forcing users to perform certain operations bypassing the limit.\nThe leakage of important information that can bring damage to the target system, File backup of sensitive information or leakage of source code, etc. ( such as the leakage of storage keys, the leakage of data access password, the leakage of SVN／Git account and the leakage of VPN account).\nBugs can Led to the ownership lost of token contracts, for example: Key function access control defects, call injection caused the bypass of key function access and so on.\nBugs can damage the normal work of the token contracts, for example: DoS bugs led by sending ETH to a Malicious address, and the DoS bugs led by the exhaustion of gas.",
+    "midRiskBugLabel":"Medium Risk Bugs",
+    "midRiskBugText":"Bugs can affect the security of the target system but cannot be directly proved to be available;\nBugs able to obtain target network device permissions but determined not to be further utilized;\nNon-critical information leakage, open URL jump bugs, XSS bugs with certain restrictions and difficult to be utilized, CSRF bugs of non-core key business operations, etc.\nHigh-risk bugs require specific addresses to be triggered, such as the numerical overflow bugs that can be triggered by the holder of the token contract; Access control defects of non-critical functions and logic design defects that cannot cause direct capital loss.",
+    "lowRiskBugLabel":"Low Risk Bugs",
+    "lowRiskBugText":"It is impossible to determine whether the security of the target system can be affected. For example, the target system management port is open to the public network but cannot be directly utilized, the Banner information of the target system can be identified, and other infiltration testers can identify that it is difficult to use but may have potential security threats.\nBugs that are difficult to be triggered, and those with limited harms after being triggered, such as the numerical overflow bugs that needs a large number of ETH or tokens to be triggered, the bugs that the attacker cannot directly profit after they triggered numerical overflow, and the risk of relying on transaction sequence triggered by specifying high gas.\n",
+    "noticeLabel":"Matters Need Attention",
+    "noticeText":"• The client includes all client programs published through official channels\n• No rewards for bugs that already submitted on other bug disclosure platforms.\n• Third-party application bugs on open platforms are not rewarded.\n•The earliest submission of the same bug is rewarded."
+  },
+  "navigation": {
+    "nav": "The Great Discovery Plan",
+    "intro": [
+      "Tackles the Obstacles of permissionless blockchain",
+      "The First Hybrid Consensus Incentive Model",
+      "Stable and Low Gas Fee Mechanism and provides gas payment agency"
+    ],
+    "context": [
+      "The Age of Discovery, or the Age of Exploration (approximately from the beginning of the 15th century until the end of the 17th century), is an informal  defined term for the period in the world history in which extensive overseas exploration emerged as a powerful factor in European culture and which was the beginning of globalization. This represented one of the most significant global events concerning ecology, agriculture and culture in history.",
+      "Adhering to the spirit of exploration in the ‘Age of Discovery’, TrueChain officially released ‘The Great Discovery Plan’, which is committed to accelerating the development of technology, content, branding, and eco-system, in a multidimensional way within one year. In addition, the TrueChain team will comprehensively promote the future development plan through multi-dimensional live broadcasts, offline road shows and online publicity activities. The ‘Great Discovery Plan’ is the first phase of a development and promotion plan released by TrueChain after its establishment. The Great Discovery Plan is mainly divided into the following five stages: ‘Ming Treasure Voyages’, ‘The Cape of Good Hope’, ‘The New Channel’, ‘The New Continent’, and ‘Round-The-World Travel’. The Great Discovery Plan  corresponds to the Columbus stage of the  TrueChain' roadmap, which is divided into Genesis, Columbus, and Republic."
+    ],
+    "countdown": "Mainnet Deployment Count Down",
+    "congratulate": "Congratulations on the official launch of TrueChain's mainnet!",
+    "title": "The Great Discovery Plan",
+    "locked": "Ready to Sail",
+    "stpes": [
+      {
+        "name": "Treasure voyages",
+        "summary": "assets digitalization",
+        "intro": "TrueChain has been striving to connect with the international market, and Pandaq, the first cross-border fintech platform in Asia was launched on March 7 by TrueChain partnering with Eight Decimal Capital. It aims to provide one-stop asset digitalization technology solutions for truly valuable businesses and assets.\nOn March 12th, TrueChain launched Asia's first ST Protocol called PandaST. This protocol provides a standard for the tokenization and circulation of traditional securitized assets on blockchain, and aims to help enterprises transfer the compliance of traditional securitized investment assets to the operation of the blockchain, allowing qualified investors to participate in STO after identity verification."
+      },
+      {
+        "name": "Cape of Good Hope",
+        "summary": "new mainnet ",
+        "intro": "Mainnet’s launch countdown activities and live interactions will be released.\nTrueChain will release a new slogan.\nTrueChain Main-net will be officially launched, which is the world's first hybrid consensus public blockchain. It provides the underlying public blockchain support with high performance and high security for decentralized application (DApp) and global asset circulation.\nThe new TRUE wallet will also be officially released."
+      },
+      {
+        "name": "New Channel",
+        "summary": "win-win collaboration",
+        "intro": "The ERC20 token based on ethereum TRUE will switch to the TrueChain mainnet coin; \nTRUE wallet will launch a number of new applications;\nTRUE will enter a number of new international trading platforms;\nTRUE will emerge in applications of assets circulation."
+      },
+      {
+        "name": "New Continent",
+        "summary": "global consensus",
+        "intro": "a number of offline road shows and publicity activities will be carried out in Europe, East Asia, Southeast Asia and North America.\nTrueChain will appear in the 2019 Malta AI & Blockchain Summit;\nA number of high-quality assets will be selected to launch through Pandaq platform."
+      },
+      {
+        "name": "Round the world",
+        "summary": "decentralized community",
+        "intro": "\nTrueChain will hold the first global Consensus conference \"TrueGlobal Consensus 2019\" in , Hanoi, Vietnam. Industry guests, well-known media and capitals will attend the event together.\n\"TRUE Futrue of Blockchain\" ecological plan and future strategies will be released;\nThe “TrueBridge Cross-chain Whitepaper” is planned to be announced soon. \nHereafter, TrueGlobal will conduct road shows and community interactions around the world as the community organization of TrueChain eco-system."
+      }
+    ],
+    "head": {
+      "title": "The Great Discovery Plan - TrueChain",
+      "keywords": "初链, TRUE,初链币, TrueChain, truechain, blockchain, TRUE币, Hybrid Consensus, 第三代公链, 初链官网, Pow+pbft, CCTV, Eric Zhang, 刘洋, DApp, Mainnet goes online, true swap, true switch,  Age of Voyage, truechain mainnet go live"
+    }
+  },
+  "notice": {
+    "title": "TRUE Swap Announcement",
+    "pre": "Dear TrueChain fans,",
+    "content": [
+      "The mainnet of TrueChain has been launched on March 30, and the mapping process between ERC20 TRUE token and TrueChain mainnet TRUE token has started. ERC20 TRUE will be swapped at 1:1 ratio to TrueChain Mainnet TRUE. ",
+      "TRUE holders please SWAP your tokens as soon as possible. There are 2 ways you can swap your tokens: SWAP with the support from an exchange and SWAP without exchange.",
+      "1. If your TRUE tokens are in the exchanges, you do not need to do anything on your side. TrueChain has contacted the top exchanges that currently support TRUE, and the exchanges will complete the swap of TRUE automatically for their customers.",
+      "2. If your TRUE tokens are not in the exchanges, you will need to transfer those tokens from your existing ERC20 wallet including Imtoken, Kcash to the assigned ETH address. TrueChain Foundation will confirm the transaction and send the same amount of new TrueChain mainnet tokens back to your address within 10 business days."
+    ],
+    "link": "Click here for the detailed instructions",
+    "contract": "The ERC20 TRUE token contract address is: ",
+    "address": "The officially assigned unique address for collection is: ",
+    "qrcode": "and the QR code of the address: ",
+    "app": "Please download the TRUE Wallet from the official site: ",
+    "safety":"For the safety of your assets, please only buy TRUE token from reputable source. The old ERC20 TRUE token contract address is: 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB . DO NOT TRANSFER TO THIS ADDRESS!!!"
   }
 }

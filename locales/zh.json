@@ -1,0 +1,776 @@
+{
+  "language": "简体中文",
+  "linksList": [
+    {
+      "name": "微博",
+      "icon": "icon font_family icon-weibo",
+      "link": "https://weibo.com/u/1246658260"
+    },
+    {
+      "name": "twitter",
+      "icon": "icon font_family icon-twitter",
+      "link": "https://twitter.com/truechaingroup/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-telegram",
+      "link": "https://www.t.me/truechaingroup"
+    },
+    {
+      "name": "facebook",
+      "icon": "icon font_family icon-facebook",
+      "link": "https://www.facebook.com/TrueChaingroup/"
+    },
+    {
+      "name": "reddit",
+      "icon": "icon font_family icon-reddit",
+      "link": "https://www.reddit.com/r/truechain/"
+    },
+    {
+      "name": "medium",
+      "icon": "icon font_family icon-medium",
+      "link": "https://medium.com/@truechaingroup"
+    },
+    {
+      "name": "youtube",
+      "icon": "icon font_family icon-youtube",
+      "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
+    }
+  ],
+  "footerLinkDescr": "初链官方社交平台",
+  "footerDownDescr": "初链轻钱包应用下载",
+  "footer":{
+    "miningGuideText":"TrueChain挖矿教程",
+    "mingBtns":[
+      {
+        "text":"Mining",
+        "link":"http://doc.truechain.pro/center/1098768"
+      }
+    ]
+  },
+  "home": {
+    "head": {
+      "title": "初链TrueChain-下一代混合共识公链",
+      "keywords": "初链, TRUE,初链币, TrueChain, truechain, TRUE币, 混合共识, 第三代公链, 初链官网, Pow+pbft, 比特币, 以太坊, CCTV, 张剑南, 刘洋, DApp, 去中心化应用, 区块链, 挖矿",
+      "description": "初链TrueChain致力于下一代区块链基础设施，是全球最早采用fPow+pbft混合共识的公有链并拥有强大的全球开源技术社区，为去中心化应用（DApp）和全球资产流通提供高性能和高安全性的底层公链支撑。",
+      "googleVer":"skbsF22bUi1-CA8SWcxJjVyUlXR4BaAS7E-1-bcMXnA"
+    },
+    "adVideoTitle":"介绍",
+    "adVideoLink":"https://qiniu.truescan.net/video/ad-zh.mp4",
+    "slogan": "真正快速、不受限、安全、可扩容",
+    "slogan1": "具有全球开发者社区的PBFT-fPoW混合共识公链",
+    "white": "白皮书",
+    "whiteLink": "https://qiniu.truescan.net/pdf/whitepaper-zh.pdf",
+    "yellow": "黄皮书",
+    "yellowLink": "https://qiniu.truescan.net/pdf/yellowpaper-zh.pdf",
+    "mainNet": "主网",
+    "banner2": {
+      "title": "True 轻钱包应用",
+      "line1": "公测版本",
+      "line2": "扫描二维码下载"
+    },
+    "banner3": {
+      "title": "优先节点火热竞选中",
+      "line1": "4000个优先标准节点 & 100个优先全节点",
+      "line2": "3000w True Token节点激励",
+      "btntext": "查看详情"
+    },
+    "superiority": [{
+        "icon": "icon font_family icon-jiejue",
+        "title": "解决公链最显著的问题",
+        "detail": "初链利用基于 PBFT-fPoW混合共识机制和安全的分片机制解决了目前公链(无需许可链)面临的最大的问题：性能和去中心化之间的矛盾"
+      },
+      {
+        "icon": "icon font_family icon-tianchengzuo",
+        "title": "确保去中心化和公平性",
+        "detail": "用水果链作为慢链，用fPoW取代中本聪的PoW协议, 初链可确保作为新一代公链(无需许可链)的去中心化和公平性"
+      },
+      {
+        "icon": "icon font_family icon-gongshijizhi",
+        "title": "第一代混合共识激励机制",
+        "detail": "初链是世界上第一个利用激励机制来治理混合共识公链的，这为区块链技术赋予了经济意识"
+      },
+      {
+        "icon": "icon font_family icon-jizhi",
+        "title": "稳定、低成本的燃料费机制",
+        "detail": "实现零燃料费对于任何一个公链(无需许可链)来说都是不可能的，尽管如此，初链可提供稳定、低成本的燃料费而让更多DApps实现上链"
+      },
+      {
+        "icon": "icon font_family icon-shequ",
+        "title": "强大的全球开发者社区",
+        "detail": "在新一代公链中，初链拥有中国范围内规模最大、全球范围内增长速度最快的开发者社区"
+      },
+      {
+        "icon": "icon font_family icon-chanpin",
+        "title": "开源的产品矩阵",
+        "detail": "为完善和支持混合共识公链平台，初链有十分完整且易用的产品矩阵，并且所有产品都对外开源"
+      }
+    ],
+    "about": {
+      "title": "关于",
+      "subhead": "初链TrueChain致力于下一代区块链基础设施，是全球最早采用fPow+pbft混合共识的公有链并拥有强大的全球开源技术社区，为去中心化应用（DApp）和全球资产流通提供高性能和高安全性的底层公链支撑。",
+      "contentList": [
+        "初链基于Minerva混合共识机制，结合了PBFT 和 fPoW ，解决了公链领域面临的最大问题：去中心化和性能之间的矛盾。",
+        "初链利用PBFT作为快速链实现交易的快速处理，PoW负责PBFT委员会监管和选举，而将水果链技术融合到传统的PoW协议中，成为fPow，使普通用户有机会参与到挖矿中来，实现更加去中心化和公平化。同时，初链在PBFT之上增加了分片机制，突破了扩容性方面的限制。",
+        "初链拥有先进和实凿的的技术，我们的目标是为去中心化经济提供一个完全可运行，良好自治的区块链平台。初链率先提出了混合共识激励机制，利用经济意识从根本上支撑并促进区块链的发展。同时，初链独创的稳定燃料费机制能够降低开发者和运营者开发DApps的成本，从而使得初链更加地面向大众。",
+        "作为一个区块链平台，初链建立一个高度兼容的社区来吸引全球的开发人员和创业者成为初链社区的一员。初链不仅拥有一个全球化的社区，同时初链还拥有多项开源产品，方便开发者使用，这使得初链可以从用户的角度出发，为DApp开发提供最有利的条件。",
+        "初链拥有国际化团队，成员来自美国，越南、韩国、中国、泰国、欧洲等国家和地区。",
+        "初链是中国国家云产业体系战略创新联盟理事单位，国家链网中心成员，也是为数不多的、接受过中国中央电视台等权威媒体报道的区块链项目。"
+      ]
+    },
+    "roadmap": {
+      "title": "路线",
+      "content": [
+        "2017.9 - 2018.10",
+        "TrueChain发布了白皮书v1.0",
+        "TrueChain的PBFT联盟链发布",
+        "TrueChain技术黄皮书v1.0发布",
+        "混合共识机制设计完成",
+        "Stellar - 智能合约管理引擎发布开源",
+        "TrueChain的工程路线图发布在github上",
+        "TrueChain轻钱包发布",
+        "TrueChain的分散节点选举系统发布",
+        "TrueChain已在OKex、ZB、Bithumb、HitBTC等多家大型交易所上市",
+        "全球TrueChain的token持有者超过10万",
+        "混合共识框架代码开源",
+        "TrueChain基金会董事会选举产生",
+        "混合共识激励机制发布",
+        "TrueChain技术黄皮书v2.0发布",
+        "TrueChain 测试网 — Beta网发布",
+        "TrueChain的第一个区块链浏览器TrueScan发布并启用",
+        "开发者平台发布",
+        "超过10个Dapp在TrueChain Beta网上运行和测试",
+        "2018.11 - 2019.12",
+        "设计PandaST协议",
+        "实施第三方Gas支付代理",
+        "主网启动",
+        "改良Gas收费机制",
+        "改进公有链激励模式",
+        "增加和稳定主网的挖矿哈希功率，保证高级别的安全性",
+        "超过100个Dapp & TrueChain上的资产令牌",
+        "TrueChain发行价值1000万美元以上资产",
+        "全球超过50万的Token持有者",
+        "增加零知识证明和相关的隐私功能",
+        "2020以后",
+        "超过1000个Dapp & TrueChain上的资产令牌，并持续快速增长",
+        "超过价值10亿美元的资产将在TrueChain上发行，并持续快速增长",
+        "全球将有超过100万TRUE Token持有者，并持续快速增长",
+        "分散治理"
+      ],
+      "list": [{
+          "time": "2018-01",
+          "events": ["True白皮书发布"]
+        },
+        {
+          "time": "2018-03",
+          "events": ["PBFT联盟链上线"]
+        },
+        {
+          "time": "2018-04",
+          "events": ["初链技术黄皮书发布", "混合共识机制设计完善", "合约生命周期管理平台发布和stellar平台发布"]
+        },
+        {
+          "time": "2018-05",
+          "events": ["初链工程路线图在github发布", "初链轻钱包上线", "初链去中心化节点竞选系统上线"]
+        },
+        {
+          "time": "2018-06",
+          "events": ["混合共识代码框架开源", "混合共识激励机制发布", "主网v0.01内测"]
+        },
+        {
+          "time": "2018-07",
+          "events": ["fPOW基础框架实现和开源", "美国开发者社区成立"]
+        },
+        {
+          "time": "2018-08",
+          "events": ["fPOW与初链主网整合", "混合共识分片机制"]
+        },
+        {
+          "time": "2018-9",
+          "events": ["初链主网上线（仅对优先节点开放）"]
+        },
+        {
+          "time": "2018-Q4",
+          "events": ["10月下旬,智能合约平台上线"]
+        },
+        {
+          "time": "2019-Q1",
+          "events": ["主网向全部节点开放"]
+        },
+        {
+          "time": "2019-Q2",
+          "events": ["分片上线","存储解决方案上线","易达普上线（测试版）"]
+        },
+        {
+          "time": "2019-Q3",
+          "events": ["全面推广易达普行业解决方案、分片行业解决方案"]
+        }
+      ]
+    },
+    "partner": "合作机构",
+    "institution": "投资机构",
+    "news": {
+      "title": "新闻",
+      "technical": "技术动态",
+      "biz": "商业动态",
+      "point": "暂无数据",
+      "list": [{
+          "time": "2018-05-24",
+          "title": "初链登陆CCTV6, 助推实体经济"
+        },
+        {
+          "time": "2018-05-23",
+          "title": "区块链技术将颠覆众多行业"
+        },
+        {
+          "time": "2018-05-20",
+          "title": "初链参与工信部区块链产业白皮书调研"
+        }
+      ]
+    }
+  },
+  "roadmap": "路线",
+  "name": "初链",
+  "copyright": "（初链）官方网站版权所有",
+  "footerContactUs":"合作咨询邮箱",
+  "nav": {
+    "deer":"开发者",
+    "git": "GITHUB",
+    "developer": "开发者平台",
+    "document":"文档中心",
+    "blog": "博客",
+    "team": "团队",
+    "news": "新闻",
+    "join": "加入我们",
+    "node": "节点",
+    "reward": "悬赏计划",
+    "webwallet":"钱包",
+    "english": "简体中文"
+  },
+  "banner": {
+    "title": "True轻钱包",
+    "p1": "公开测试版本",
+    "p2": "扫描二维码下载应用"
+  },
+  "news": {
+    "head": {
+      "title": "初链新闻-初链最新动态-区块链快讯-初链",
+      "keywords": "初链快讯，TRUE,区块链快讯，数字货币快讯",
+      "description": "初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。"
+    },
+    "title": "新闻",
+    "point": "暂无数据",
+    "technical": "新闻动态",
+    "biz": "商业动态"
+
+  },
+  "partner": {
+    "title": "合作伙伴"
+  },
+  "team": {
+    "head": {
+      "title": "初链团队-初链TrueChain",
+      "keywords": "初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才",
+      "description": "初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。"
+    },
+    "banner": "With 2000+ developers from the world",
+    "technology": {
+      "title": "Research and Developers Community",
+      "list": [{
+          "name": "Eric Zhang",
+          "post": "CEO",
+          "imgSrc": "jiannan",
+          "introList": [
+            "M.S. In Computer Science, Oxford University",
+            "Founder of DoraHacks ",
+            "Researcher, CERN Open Lab (2013)"
+          ]
+        },
+        {
+          "name": "Dylan Liu",
+          "post": "CTO",
+          "imgSrc": "liuyang",
+          "introList": [
+            "B.S. & M.S. Computer Science, Tsinghua University",
+            "10+years experience in development and system architecture",
+            "Cryptography and algorithms expert"
+          ]
+        },
+        {
+          "name": "Hendrik C",
+          "post": "Lead Researcher",
+          "imgSrc": " ",
+          "intro": " ",
+          "introList": [
+            "PhD in mathematics",
+            "Has ample experience in researching and practicing blockchain technologies, cryptography and security."
+          ]
+        },
+        {
+          "name": "Kenny Zhou",
+          "post": "Product Team Lead",
+          "imgSrc": "qingsong",
+          "intro": "",
+          "introList": [
+            "Former co-founder &CTO at the Honest Doctor ",
+            "More than 10 years of experience in large-scale distributed systems and architectures and products"
+          ]
+        },
+        {
+          "name": "Felix Cai",
+          "post": "Front - end Engineering Lead",
+          "imgSrc": "zhenchuan",
+          "introList": [
+            "Youth Class, Xi’an Jiaotong University",
+            "Front - end Hacker",
+            "First Prize, DoraHacks Autumn@Xi An 2017"
+          ]
+        },
+        {
+          "name": "Ice Ming",
+          "post": "Integration lead",
+          "imgSrc": "tianming",
+          "introList": [
+            "10+years experience in c/c++ development",
+            "Real time database products and digital currency transaction platform products expert",
+            "Participated in developing bitcoin and ethereum wallets"
+          ]
+        },
+        {
+          "name": "Seay (Wizard)",
+          "post": "Security Coordinator",
+          "imgSrc": "fashi",
+          "introList": [
+            "Lead, Alibaba attack and security lab",
+            "Author of “Code Audit: Architecture of Enterprise Web Security”",
+            "Host of well-known security blog cnseay.com"
+          ]
+        },
+        {
+          "name": "Neol Zeng",
+          "post": "Senior R&D Director",
+          "imgSrc": "biyun",
+          "introList": [
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
+          ]
+        },
+        {
+          "name": "Brian Liu",
+          "post": "Blockchain evangelist",
+          "imgSrc": "liupeng",
+          "introList": [
+            "MSc and B.S from Peking University",
+            "Author of \"Blockchain: 101\"",
+            "10+ working year experience in software development, leading and coaching high performing teams",
+            "Worked in IBM China Development Lab (CDL) High Performance Computing team and \"LERO - The Irish Software Engineering Research Center\" Distributed Systems research group"
+          ]
+        }
+      ]
+    },
+    "business": {
+      "title": "Community and development",
+      "list": [{
+          "name": "James Cheng",
+          "post": "Head of Strategic Development",
+          "imgSrc": "xiaoyong",
+          "introList": [
+            "Part-time research staff of Tsinghua University, Serial entrepreneur",
+            "Executive Committee of China Cloud System Pioneer Strategic Alliance",
+            "Foreign Expert of Thailand Crypto Beach Association"
+          ]
+        },
+        {
+          "name": "Larry Lin",
+          "post": "Head of Business Development",
+          "imgSrc": "daliang",
+          "introList": [
+            "Internet marketing community operation expert",
+            "Baidu encyclopedia operation",
+            "10+years of digital advertising and internet industry"
+          ]
+        },
+        {
+          "name": "Jimmy Zhao",
+          "post": "TrueChain Global Strategic Partner",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZB group executive and founder of ZBX (ZB Europe)",
+            "Founder of Cryptonord",
+            "Partner of Y investment",
+            "Founder of ChainX",
+            "Runs a 10,000-bitcoin fund",
+            "A well-known core figure in the blockchain industry in Europe"
+          ]
+        },
+        {
+          "name": "Hillary Nguyen",
+          "post": "TrueChain Vietnamese Partner",
+          "imgSrc": "hillarynguyen",
+          "introList": [
+            "Managing partner of Alphawhale Capital.",
+            "A Strategist, Advisor, Communicator, Consultant, community influencer and Speaker in Blockchain, Digital asset management.",
+            "With diverse set of skills, Hillary executes her management role effectively into the new foundation of company in revolution."
+          ]
+        },
+        {
+          "name": "Paulus Pham",
+          "post": "TrueChain Vietnamese Partner",
+          "imgSrc": "paulaspham",
+          "introList": [
+            "Blockchain community management professional ",
+            "Managers of some major blockchain user community in Vietnam"
+          ]
+        },
+        {
+          "name": "Sun-Woo Chu",
+          "post": "TrueChain Strategic partner of Korea",
+          "imgSrc": "qiutingnan",
+          "introList": [
+            "Vice President, Korea International Finance Association",
+            "Element Founder & CEO",
+            "former Money Today Innovation Strategy Team Asia Chief",
+            "former One Asia Editor-in-Chief",
+            "former Asia Today Multimedia Desk Editor/International Editor"
+          ]
+        },
+        {
+          "name": "Pingping Wang",
+          "post": "TrueChain Strategic partner of Korea",
+          "imgSrc": "wangpingping",
+          "introList": [
+            "Element Director, China Business",
+            "Money Today Innovation Strategy Team Reporter",
+            "One Asia Reporter",
+            "Asia Today Multimedia Desk & International Reporter"
+          ]
+        }
+      ]
+    },
+    "consultant": {
+      "title": "Advisors",
+      "list": [
+        {
+          "name": "Lin ChuiZhou",
+          "intro": "",
+          "introList": [
+            "Academician consultant of TrueChain",
+            "Academician of the Royal Swedish Academy of Sciences and Hong Kong Academy of Engineering Sciences",
+            "Former vice — principal of Hong Kong University of Science and technology and a former president of Industrial Technology Research Institute.",
+            "Former Visiting professor of National University of Singapore,Tsinghua University, University of Science and Technology of China, Shanghai Jiaotong University and many prestigious Institutions at home and abroad."
+          ]
+        },
+        {
+          "name": "Yushi Shen",
+          "introList": [
+            "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
+            "BS, Electronic Engineering, Tsinghua University",
+            "MA, PH.D, computer science, University of California, San Diego",
+            "Panelist for China’s “the Thousand Talents Plan”",
+            "Researcher of Tsinghua and other prestigious universities",
+            "Strategic consultant for Microsoft"
+          ]
+        }
+      ]
+    }
+  },
+  "join": {
+    "head": {
+      "title": "初链-招聘官网",
+      "keywords": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
+      "description": "初链招聘期待更多区块链人才加入我们。"
+    },
+    "title": "加入我们",
+    "intro": "欢迎有创意，有激情，有真心的您加入，与我们一起扬帆起航",
+    "p1": "从进入的第一天起，你就开始了一边工作一边培训的过程。你将发现我们积累的专业经验对你收益良多。加入我们你将被列入公司的员工职业发展培训计划中。",
+    "p2": "培训不仅是每位员工素质及潜能获得不断提高和发展的需要，也是促进公司获得更大成功的重要标志之一。我们可以很自信的说，通过这里的工作学习，你将有机会成为这个行业的专家。",
+    "button": "立刻加入",
+    "duty": "工作职责",
+    "require": "职位要求",
+    "workCity": "工作地点",
+    "requireNum": "需求数量",
+    "salary": "薪资待遇",
+    "email": "简历投递邮箱",
+    "position": [{
+        "path": "jd/0",
+        "icon": "icon font_family icon-kaifa",
+        "job": "Go语言开发工程师"
+      },
+      {
+        "path": "jd/1",
+        "icon": "icon font_family icon-suanfa",
+        "job": "Go语言算法工程师"
+      },
+      {
+        "path": "jd/2",
+        "icon": "icon font_family icon-touzi",
+        "job": "投资者关系总监"
+      },
+      {
+        "path": "jd/3",
+        "icon": "icon font_family icon-zhaopin",
+        "job": "招聘主管"
+      },
+      {
+        "path": "jd/4",
+        "icon": "icon font_family icon-zhuli",
+        "job": "CEO助理"
+      },
+      {
+        "path": "jd/5",
+        "icon": "icon font_family icon-zongjian",
+        "job": "区块链业务总监"
+      },
+      {
+        "path": "jd/6",
+        "icon": "icon font_family icon-shixisheng",
+        "job": "运营实习生"
+      }
+    ],
+    "jobs": [{
+        "title": "Go语言开发工程师",
+        "duty": [
+          "使用Go语言设计并开发初链区块链的产品。",
+          "参与区块链平台的软件架构设计，研究区块链基础设施的关键技术。",
+          "负责区块链核心层（交易、消息、虚拟机EVM）相关的开发。",
+          "与产品/设计/前端开发/测试团队紧密合作，按时保质交付区块链开发任务；",
+          "其它上级领导安排的工作"
+        ],
+        "require": [
+          "有2年以上的项目开发经验;",
+          "熟悉golang语言编程，掌握多线程；",
+          "具有高负载、高并发开发设计经验值者优先考虑；",
+          "拥有扎实的计算机编程能力，尤其在数据结构、算法和代码、软件设计方面有较好的功底；",
+          "熟悉 fabric 或者以太坊开发的优先。"
+        ]
+      },
+      {
+        "title": "Go语言算法工程师",
+        "duty": [
+          "使用Go语言设计并开发初链区块链的产品。",
+          "参与区块链平台的软件架构设计，研究区块链基础设施的关键技术。",
+          "负责区块链核心层（共识算法）相关的开发。",
+          "与产品/设计/前端开发/测试团队紧密合作，按时保质交付区块链开发任务；",
+          "其它上级领导安排的工作"
+        ],
+        "require": [
+          "有2年以上的项目开发经验;",
+          "熟悉golang语言编程，掌握多线程；",
+          "具有高负载、高并发开发设计经验值者优先考虑；",
+          "拥有扎实的计算机编程能力，尤其在数据结构、算法和代码、软件设计方面有较好的功底；",
+          "熟悉 fabric 或者以太坊开发的优先。"
+        ]
+      },
+      {
+        "title": "投资者关系总监",
+        "workCity": "中国、美国",
+        "requireNum": "2人（其中一人base在美国，英语口语写作均需流利）",
+        "duty": [
+          "负责机构投资者关系维护，定向向中国及美国主流的区块链基石基金路演并且洽谈合作。"
+        ],
+        "require": [
+          "熟悉区块链投资领域，可以做相关材料和投资建议书。",
+          "金融相关背景，FA出身或者上市公司募资及基金募资出身，有金融科技行业背景者优先。",
+          "为人灵活正直，敢想敢干，可以快速学习区块链基础知识和市场格局。",
+          "个人形象职业。"
+        ],
+        "salary": "底薪+提成（同募资规模、持有时间、基金知名度等指标挂钩）"
+      },
+      {
+        "title": "招聘主管",
+        "duty": [
+          "拓展、维护、评估招聘渠道,确保公司招聘渠道高效、顺畅；",
+          "利用各种招聘渠道发布招聘信息，筛选简历，难点职位主动搜简历，电话面试；",
+          "面试邀约，来人接待，以及整个招聘环节的跟进（初试、复试、通知上班等）；",
+          "办理员工入职及转正、调动、离职等异动手续；"
+        ],
+        "require": [
+          "熟悉区块链投资领域，可以做相关材料和投资建议书。",
+          "金融相关背景，FA出身或者上市公司募资及基金募资出身，有金融科技行业背景者优先。",
+          "为人灵活正直，敢想敢干，可以快速学习区块链基础知识和市场格局。",
+          "个人形象职业。"
+        ]
+      },
+      {
+        "title": "CEO助理",
+        "duty": [
+          "金融银行相关工作背景，从事资管、信托、私募等工作，有区块链工作经验优先考虑。",
+          "协助CEO进行整体公司业务规划及运营管理，组织并协调高管层的定期会议，并配合CEO进行重大经营决策的跟进和落实；",
+          "按照业务需求，负责公司运营初期的关键项目（如银行导入项目、业务流程设计项目），并向CEO汇报项目进展并处理关键节点问题；",
+          "配合CEO处理外部商务及合作伙伴公共关系，不断拓展现有客户的产品渠道，丰富业务内容；",
+          "协助CEO完成布置、实施、检查、督促、落实执行情况。",
+          "形象气质佳、良好沟通表达、清晰思路、吃苦耐劳、有工作精神。"
+        ],
+        "require": [
+          "熟悉区块链投资领域，可以做相关材料和投资建议书。",
+          "金融相关背景，FA出身或者上市公司募资及基金募资出身，有金融科技行业背景者优先。",
+          "为人灵活正直，敢想敢干，可以快速学习区块链基础知识和市场格局。",
+          "个人形象职业。"
+        ]
+      },
+      {
+        "title": "区块链业务总监",
+        "duty": [
+          "金融和银行相关渠道背景，有3年以上银行业务合作经验。",
+          "熟悉区块连在金融行业应用场景解决方案优先考虑。",
+          "组织深度开发银行渠道，拓展新的销售方式完成渠道开发任务；",
+          "有清晰的业务拓展思路，有效的市场实施策略和较强的客户开发能力。",
+          "熟悉金融市场状况及供应链金融业务类型、流程和风险控制，具备应有的风险管理和合规意识。 ",
+          "根据平台运营模式，领导，组建并管理区块连渠道团队，及统筹管理外部平台线上各项工作。"
+        ],
+        "require": [
+          "具有市场营销、金融、财经类相关专业；",
+          "10年以上金融行业背景，5年以上销售和项目管理经验，有区块链解决方案、区块链产品销售工作经验优先；  ",
+          "具有丰富的金融专业知识，了解投资理财市场的发展，对该行业有较深入的认识与思考；  ",
+          "熟悉区块链行业解决方案的行业规则及竞争对手情况",
+          "优秀的团队建设经验，团队管理能力强，善于协调营销团队的工作；",
+          "有敏锐的市场意识、应变能力、领导能力和独立开拓市场的能力，学习能力强；逻辑性强和良好的语言表达能力；    ",
+          "有一定高端客户资源，有广泛的区块链及金融人脉资源者；",
+          "具有强烈的进取心，精力充沛，身体健康，乐观豁达，富有开拓精神；"
+        ]
+      },
+      {
+        "title": "运营实习生",
+        "duty": [
+          "负责社区核心用户的拓展及维护、活动执行、跟进，数据统计等；",
+          "相关热点话题发起讨论，加强移动社区内的用户交流，提高用户粘性、活跃度和忠诚度，构建社区良好互动氛围；",
+          "提高社区圈的活跃度，并及时与用户互动；",
+          "负责维护社区核心和活跃用户、充分了解用户需求，收集用户反馈。"
+        ],
+        "require": [
+          "每周至少工作3天。",
+          "全日制统招专科及以上学历；",
+          "热爱互联网，对运营工作感兴趣，学习能力强，有组织过线上线下活动经验；",
+          "掌握office等办公软件最佳；",
+          "具有良好的沟通表达能力、工作认真负责，有责任心；"
+        ],
+        "workCity": "北京望京"
+      }
+    ]
+  },
+  "node": {
+    "head": {
+      "title": "初链TrueChain优先节点竞选结束公告",
+      "text1": "自5月中旬，初链TrueChain正式开放优先节点竞选以来，经过三个月的周期，优先节点竞选已顺利结束。根据初链TrueChain此前公布的节点计划安排，初链TrueChain优先节点申请页面已于8月16日关闭。",
+      "text2": "截止8月16日零点，近千名海内外初链社区用户参与并获选本次优先节点。其中，获选优先标准节点，个人节点439个，团队节点有2个,共455人；获选优先全节点，个人节点有43个，团队节点有17个，共340人。",
+      "text3": "根据优先节点竞选激励规则：",
+      "text4": "1.优先挖矿从9月中旬主网Beta版上线后正式开始；",
+      "text5": "2.将按原规则持续六个月，到2019年3月截止；",
+      "text6": "3.全节点和标准节点将分别分享200万TRUE, 共400万TRUE",
+      "text7": "4.在Beta版主网优先挖矿中获得的TRUE，通过映射到主网后交易。",
+      "text8": "初链基金会",
+      "text9": "2018年8月16日",
+      "keywords": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
+      "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
+    },
+    "result": "竞选结果",
+    "notPass": "(未达标)",
+    "title": "优先节点竞选报名",
+    "StandardSum": "标准节点竞选已报名",
+    "nodeFullSum": "全节点竞选已报名",
+    "sumNum": "总数",
+    "personalCampaign": "个人竞选",
+    "teamCampaign": "组队竞选",
+    "timeDownCampaign": "优先节点竞选投票倒计时",
+    "nodeRank": "优先节点竞选公示",
+    "nodeStandard": "标准节点",
+    "nodeFull": "全节点",
+    "tableRank": "排名",
+    "tableNickname": "昵称",
+    "tableTime": "报名时间",
+    "tableScore": "综合得分",
+    "tableTickets": "得票",
+    "team": "组",
+    "person": "人",
+    "day": "天",
+    "hour": "时",
+    "minute": "分",
+    "second": "秒"
+  },
+  "bugfinder":{
+    "testPlan":"测试范围",
+    "rewardPlan":"奖励计划",
+    "submitBug":"提交漏洞",
+    "highestRewardLabel":"最高奖励",
+    "pageTitle":"初链",
+    "pageDescr":"初链是真正快速、安全、不受限、可扩容的Minerva混合共识公链(无需许可链)，并拥有强大的全球开发者社区。",
+    "seriousBugLabel":"严重漏洞",
+    "seriousBugText1":"直接获取业务服务器权限的漏洞以及获取重要数据的漏洞，包括但不限于任意命令执行、上传webshell、任意代码执行、SQL注入获得大量数据；",
+    "seriousBugText2":"严重影响系统业务安全的逻辑漏洞，包括但不限于任意帐号密码重置或更改漏洞，大量获取用户身份认证信息的漏洞，越权访问漏洞，未授权访问后台管理系统等；",
+    "seriousBugText3":"可通过一定手段导致公链出现分叉；",
+    "seriousBugText4":"当前阶段正在大规模爆发应引起足够重视的安全漏洞等。",
+    "highRiskBugLabel":"高危漏洞",
+    "highRiskBugText":"可通过一定手段严重影响业务运行，可能给客户带来巨大损失的，如关键业务操作可被Dos，登录接口可被撞库，业务系统可被轻易薅羊毛等；\n需要用户交互才能获取用户身份信息的漏洞，包常规存储型／反射型XSS漏洞，核心关键业务操作的CSRF漏洞等；\n任意文件读取、修改、覆盖、删除、下载；\n绕过限制修改用户个人资料、个人信息、强制用户执行某些操作；\n能够对目标系统带来危害的严重信息泄漏，敏感信息文件备份或源码泄露等（如存储密钥泄露，数据库连接密码泄露，SVN／Git帐号泄露,VPN帐号泄露等）。\n能直接造成代币合约或用户资金损失的漏洞，如：能造成代币价值归零的数值溢出漏洞、能造成交易所损失代币的假充值漏洞、能造成合约账户损失ETH或代币的重入漏洞等；\n能造成代币合约归属权丢失的漏洞，如：关键函数的访问控制缺陷、call注入导致关键函数访问控制绕过等；\n能造成代币合约无法正常工作的漏洞，如：因向恶意地址发送ETH导致的拒绝服务漏洞、因gas耗尽导致的拒绝服务漏洞。\n",
+    "midRiskBugLabel":"中危漏洞",
+    "midRiskBugText":"能够对目标系统的安全造成影响但无法直接证实可被利用的；\n能够获取目标网络设备权限但确定无法进一步利用的；\n非重要信息泄露、开放的URL跳转漏洞、有一定限制且确定较难利用的XSS漏洞、非核心关键业务操作的CSRF漏洞等。\n需要特定地址才能触发的高风险漏洞，如代币合约拥有者才能触发的数值溢出漏洞等；非关键函数的访问控制缺陷、不能造成直接资金损失的逻辑设计缺陷等。",
+    "lowRiskBugLabel":"低危漏洞",
+    "lowRiskBugText":"无法确定是否能够对目标系统的安全造成影响的，如目标系统管理端口向公网开放但无法直接利用，目标系统Banner信息可被识别，以及其他渗透测试人员认定，较难利用但可能会存在潜在安全威胁的漏洞。\n难以被触发的漏洞、触发之后危害有限的漏洞，如需要大量ETH或代币才能触发的数值溢出漏洞、触发数值溢出后攻击者无法直接获利的漏洞、通过指定高gas触发的事务顺序依赖风险等。\n",
+    "noticeLabel":"注意事项",
+    "noticeText":"• 客户端包括所有通过官方途径发布的客户端程序；\n• 提交在其他漏洞披露平台已提交的漏洞不计奖励。\n• 开放平台的第三方应用漏洞不计奖励；\n• 同一漏洞最早提交者得奖励。"
+  },
+  "navigation": {
+    "nav": "大航海计划",
+    "intro": [
+      "解决公链最显著的问题",
+      "第一代混合共识激励机制",
+      "稳定、低成本的燃料费机制及首家代付机制"
+    ],
+    "context": [
+      "大航海时代，又被称作地理大发现。指在15世纪-17世纪世界各地，尤其是欧洲发起的广泛跨洋活动与地理学上的重大突破。大航海时代是人类文明进程中最重要的历史之一， 自人类完成了第一次环球旅行之后，世界在开始真正意义上连成一个整体，其历史意义尤为深远。",
+      "秉承大航海时代，勇于开拓的精神，初链TrueChain正式对外发布“大航海计划”,致力于在一年内通过技术、内容、品牌、生态和资本多维度全方面发展提速，并且官方将通过多维度的直播互动、线下路演以及全网宣传活动全面剖析未来发展规划。“大航海计划”是初链TrueChain成立后，首次对外发布的第一个阶段性的发展推进计划，大航海计划主要分为以下五个阶段：下西洋、好望角、新航道、新大陆、环球行。大航海计划对应TrueChain的Columbus进程，TrueChain的进程分为Genesis（创世）、Columbus（探索）、Republic（共和）。"
+    ],
+    "countdown": "TrueChain主网距离上线还有",
+    "congratulate": "热烈祝贺Truechain主网上线！",
+    "title": "True大航海计划",
+    "locked": "待开启",
+    "stpes": [
+      {
+        "name": "下西洋",
+        "summary": "资产数字化 全球联动",
+        "intro": "初链TrueChain立足对接国际市场，与八维资本联合已于3月7日推出亚洲首个跨境金融科技平台Pandaq，旨在为真正有价值的商业和资产提供一站式数字资产发行技术解决方案。\n3月12日发布了亚洲第一个ST 协议PandaST Protocol 。该协议提供了一个将传统证券化资产在链上发行、流通的规范，旨在帮助企业将传统证券化投资资产合规的转移至区块链上运作，允许经过身份审核的合格投资人参与其中。"
+      },
+      {
+        "name": "好望角",
+        "summary": "主网倒计时 社区共振",
+        "intro": "正式开启主网倒计时活动，并同期开展多样化的直播互动。\n初链TrueChain 将发布新版slogan。\nTrueChain Main-net将正式上线，由此作为全球最早的混合共识公链，并立足于为去中心化应用（DApp）和全球资产流通提供高性能和高安全性的底层公链支撑的下一代基础设施的TrueChain 主网将正式亮相。\n新版支持主网的TRUE钱包也将正式发布。"
+      },
+      {
+        "name": "新航道",
+        "summary": "踏上新征程 合作共赢",
+        "intro": "基于以太坊的ERC20代币TRUE将切换到TrueChain Mainnet的主网币；\nTRUE钱包将上线多款新应用；\nTRUE将登陆新的国际交易平台；\n在海外的现实场景的流通中崭露头角。"
+      },
+      {
+        "name": "新大陆",
+        "summary": "开拓新格局 共识环球",
+        "intro": "欧洲、东亚、东南亚、美国将同期开展多项线下综合路演和宣传；\n初链TrueChain将亮相在马耳他召开的2019马耳他人工智能和区块链峰会；\n多项优质资产将选择Pandaq平台进行发布。"
+      },
+      {
+        "name": "环球行",
+        "summary": "生态共同体 展望未来",
+        "intro": "\n初链TrueChain将在越南河内召开首届全球共识大会“TRUE Consensus 2019”，行业嘉宾、知名媒体、知名资本等将共赴盛会;\n发布“TRUE Future of Blockchain”生态计划和未来战略;\n即将发布《TRUE Bridge跨链白皮书》\n此后，TrueGlobal将作为初链TrueChain的生态社区组织在全球进行环球巡回路演和社区互动。"
+      }
+    ],
+    "head": {
+      "title": "大航海计划-初链TrueChain",
+      "keywords": "初链, TRUE, 初链币, TrueChain, truechain, TRUE币, 混合共识, 第三代公链, 初链官网, Pow+pbft, 比特币, 以太坊, CCTV, 张剑南, 刘洋, DApp, 去中心化应用, 区块链, 挖矿, 主网上线，true兑换，大航海计划，truechain主网上线"
+    }
+  },
+  "notice": {
+    "title": "TRUE兑换公告",
+    "pre": "尊敬的用户：",
+    "content": [
+      "TrueChain主网已于3月30日上线，现已开启以太坊网络TRUE与TrueChain主网币映射的工作，即通过兑换将目前以太坊网络发行的TRUE 1:1转化为TrueChain的主网币（TRUE）。",
+      "请持有以太坊网络TRUE的用户尽快进行兑换，兑换方式有两种：在交易所中和不在交易所中。",
+      "第一种在交易所中的TRUE，这一种不需要做任何操作，TrueChain已与目前支持TRUE的各大交易所对接，将在交易所对接主网完毕后由交易所自动完成TRUE的兑换。",
+      "另外一种不在交易所中的TRUE，只需要将您以太坊网络钱包(Imtoken、Kcash以及其他支持ERC20的钱包)中的TRUE转账到官方指定的以太坊钱包地址中，TrueChain基金会在确认收到后，在10个工作日内给您TrueChain主网对应的钱包中转入相同数量的TrueChain主网币（TRUE）。"
+    ],
+    "link": "点击查看详细操作说明",
+    "contract": "以太坊TRUE代币合约地址：",
+    "address": "官方以太坊钱包地址：",
+    "qrcode": "地址二维码：",
+    "app": "请立刻下载官方唯一指定钱包：",
+    "safety":""
+  }
+}

@@ -2,27 +2,35 @@
 <template lang="pug">
   .news-container
     .news-body
-      .page-title {{$t('newsRouter.title')}}
+      .page-title {{$t('news.title')}}
       .news-body-table
         .news-body-table-btn
           div(
-            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
-            @click="toggleNode(1)"
-          ) {{$t('newsRouter.technical')}}
-          div(
-            :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
-            @click="toggleNode(2)"
-            ) {{$t('newsRouter.biz')}}
+            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }"
+          ) {{$t('news.technical')}}
+          // div(
+          //   :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
+          //   @click="toggleNode(1)"
+          // ) {{$t('news.technical')}}
+          // div(
+          //   :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
+          //   @click="toggleNode(2)"
+          //   ) {{$t('news.biz')}}
         .news-body-table-body
           ul
-            nuxt-link(
-              tag="li",
-              v-for="(item, index) in list",
-              :key="index",
-              :to="`news_detail/${item.id}`",
-            )
-              .news-body-table-body-date {{ getTime(+item.create_time, true) }}
-              .news-body-table-body-title.ellipsis  {{item.title}}
+            template(v-if="list.length")
+              nuxt-link(
+                tag="li",
+                v-for="(item, index) in list",
+                :key="index",
+                :to="`news_detail/${item.id}`",
+              )
+                .news-body-table-body-date {{ getTime(+item.create_time, true) }}
+                .news-body-table-body-title.ellipsis  {{item.title}}
+            template(v-else)
+              li
+                .news-body-table-body-date
+                .news-body-table-body-title {{$t('news.point')}}
       .news-body-page
         Page(
           :total="pageSum",
@@ -33,17 +41,28 @@
 
 <script>
 
-import { getTime, contdown } from '~/util/index.js'
-// console.log(getTime);
-
+import { getTime } from '~/util/index.js'
 import { apiArticleList } from '@/api'
 export default {
-  head: {
-    title: '初链新闻-初链最新动态-区块链快讯-初链',
-    meta: [
-      { hid: 'news-keyword', name: 'keyword', content: '初链快讯，TRUE,区块链快讯，数字货币快讯' },
-      { hid: 'news-description', name: 'description', content: '初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。' },
-    ]
+  /* async asyncData({ store }) {
+    const result = await apiArticleList({
+        'theme': 1,
+        'pageIndex': 0,
+        'pageNumber': 10,
+        'language': store.state.locale === 'zh' ? '1' : '2'
+      })
+      return {
+        list: result.data.data
+      }
+  }, */
+  head () {
+    return {
+      title: this.$t('news.head.title'),
+      meta: [
+        { hid: 'news-keyword', name: 'keywords', content: this.$t('news.head.keywords') },
+        { hid: 'news-description', name: 'description', content: this.$t('news.head.description') }
+      ]
+    }
   },
   data () {
     return {
@@ -53,10 +72,10 @@ export default {
       nodeType: 1,
       pageIndex: 0,
       currentPage: 1,
-      pageNumber: 10,
+      pageNumber: 10
     }
   },
-  async created () {
+  mounted () {
     this.fetchData()
     this.onFetchSumPage()
   },
@@ -73,10 +92,15 @@ export default {
     fetchData (obj = {}) {
       const { pageSum, nodeType, pageIndex = 1 } = obj
       this.pageIndex = pageIndex - 1
+      const language = {
+        'zh': '1',
+        'en': '2',
+      }
       apiArticleList({
         'theme': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
-        'pageNumber': pageSum || this.pageNumber
+        'pageNumber': pageSum || this.pageNumber,
+        'language': language[ this.$store.state.locale ] || '2'
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
@@ -96,14 +120,18 @@ export default {
         nodeType: x,
         pageSum: 50000
       })
-    },
+    }
   }
 }
 </script>
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
+@media screen and (max-width 1024px)
+  .news-body
+    width 90% !important
+  .news-body-table-body-date
+    margin 0 10px !important
 .news-body
   display flex
   flex-direction column
@@ -111,10 +139,12 @@ export default {
   padding-top 100px
   padding-bottom 170px
   position relative
-  width 900px
+  width 62%
+  // background red
   margin 0px auto
 .news-body-table
-  width 900px
+  // width 900px
+  width 100%
 .news-body-table-btn
   padding-top 60px
   display flex
@@ -153,6 +183,7 @@ export default {
       .news-body-table-body-date
         color #456C99
         margin 0 30px 0 20px
+        white-space nowrap
         font-size 14px
     li:nth-child(odd)
       background $bg-pearlblue

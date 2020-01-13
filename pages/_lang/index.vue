@@ -1,45 +1,53 @@
 <template lang="pug">
-div
+.home
   .loop-header
     #particles-js
     Carousel(
       class="loop-container",
-      v-model="value1"
-      arrow="always"
+      v-model="homeCarouse",
+      :arrow="homeConfig.arrow",
+      :dots="homeConfig.dots"
     )
       CarouselItem
         div(class="demo-carousel banner-home")
           .banner-home-logo
             i(class="icon font_family icon-logo")
           .banner-home-slogan
-            span {{ $t('home.slogan') }}
+            div {{ $t('home.slogan') }}
+            div {{ $t('home.slogan1') }}
+            span(v-if="$store.state.locale === 'en'") No Cliche, Leading Tech, Workable Chain
           .banner-home-buttons
             a(href="https://github.com/truechain",target="_blank") GITHUB
-            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
-            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
-      CarouselItem
-        .banner2
-          img.telpic(src="~assets/images/home-banner2.png")
-          .ri
-            p.title {{ $t('home.banner2.title') }}
-            p.line1 {{ $t('home.banner2.line1') }}
-            p.line2 {{ $t('home.banner2.line2') }}
-            .down
-              app-android
-              app-ios
-      CarouselItem
-        .banner3-bg
-          img(src="~assets/images/home-banner3bg.jpg")
-        .banner3
-          .lf
-            i(class="icon font_family icon-logo1")
-            p.title {{ $t('home.banner3.title') }}
-            p.line1 {{ $t('home.banner3.line1') }}
-            p.line2 {{ $t('home.banner3.line2') }}
-            a.node-detail(href="/node") {{ $t('home.banner3.btntext') }}
-          .ri
-            img(src="~assets/images/home-banner3.png")
-
+            a(:href="$t('home.yellowLink')",target="_blank") {{ $t('home.yellow') }}
+            a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
+            a(href="https://github.com/truechain/truechain-engineering-code",target="_blank") {{ $t('home.mainNet') }}
+      //- CarouselItem
+      //-   .banner2
+      //-     img.telpic(src="~assets/images/home-banner2.png")
+      //-     .ri
+      //-       p.title {{ $t('home.banner2.title') }}
+      //-       p.line1 {{ $t('home.banner2.line1') }}
+      //-       p.line2 {{ $t('home.banner2.line2') }}
+      //-       .down
+      //-         app-android
+      //-         app-ios
+      //- CarouselItem
+      //-   .banner3-bg
+      //-     img(src="~assets/images/home-banner3bg.jpg")
+      //-   .banner3
+      //-     .lf
+      //-       i(class="icon font_family icon-logo1")
+      //-       p.title {{ $t('home.banner3.title') }}
+      //-       p.line1 {{ $t('home.banner3.line1') }}
+      //-       p.line2 {{ $t('home.banner3.line2') }}
+      //-       .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
+      //-     .ri
+      //-       img(src="~assets/images/home-banner3.png")
+    //- .home-sign-up
+    //-   span
+    //-     span(class="icon font_family icon-tongzhi")
+    //-     span
+    //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloEarth”--2018区块链应用落地大赛开始报名了!
   .home-intro-3col
     .col3-con
       .co(
@@ -55,13 +63,8 @@ div
     .con
       .title {{ $t('home.about.subhead') }}
       .descr
-        p {{ $t('home.about.p1') }}
-        p {{ $t('home.about.p2') }}
-        p {{ $t('home.about.p3') }}
-        p {{ $t('home.about.p4') }}
-        p {{ $t('home.about.p5') }}
-        p {{ $t('home.about.p6') }}
-      .col3
+        p(v-for="item in $t('home.about.contentList')") {{ item }}
+      .col3(v-if="$store.state.locale === 'zh'")
         .co
           img(src="~assets/images/h1.png")
         .co
@@ -71,193 +74,231 @@ div
 
   .home-roadmap
     .page-title {{ $t('home.roadmap.title') }}
-    .time-line-con
-      .start-point
-      .time-line-block(
-        v-for="(item,index) in $t('home.roadmap.list') "
-      )
-        .lf
-          .even(v-if="index%2==0")
-            .time {{item.time}}
-          .odd(v-if="index%2>0")
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt(
-                v-for="(txt, index) in item.events",
-                :key="index"
-              )
-                .dot
-                .txt {{txt}}
-        .ri
-          .even(v-if="index%2==0")
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt(
-                v-for="(txt, index) in item.events",
-                :key="index"
-              )
-                .dot
-                .txt {{txt}}
-          .odd(v-if="index%2>0")
-            .time {{item.time}}
-
-
+    .only-on-pc
+      RoadMap
+    .only-on-mobile
+      RoadMapMobile
   .home-partner
     .page-title {{ $t('home.partner') }}
     .con
       .co(
-          v-for="index in 5",
+          v-for="index in 7",
       )
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
-
   .home-investment
     .page-title {{ $t('home.institution') }}
     .con
       .co(
-          v-for="index in 4",
+          v-for="index in 6",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
-  .home-news
-    .page-title {{ $t('home.news.title') }}
+  .home-investment(v-if="$i18n.locale !== 'zh'")
+    .page-title {{ $t('home.exchanges') }}
     .con
       .co(
-        v-for="(item,i) in $t('home.news.list')"
-      )
-        .vid(@click='showmod(i)')
-          img.pic(
-            :src="require(`@/assets/images/mx${i+1}.jpg`)"
-          )
-          img.playicon(src="/playicon.png")
-          .vid-mask
-        // .time {{ item.time }}
-        .descr {{ item.title }}
-    // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
-
-  no-ssr(placeholder="Loading...")
-    Modal(
-      v-model="modalvid",
-      class-name="vertical-center-modal",
-      @on-visible-change="changedmodal",
-      :width="700"
-      )
+          v-for="name in exchanges",
+        )
+          img(:src="`https://qiniu.truescan.net/exchange/${name}.png`")
+  .home-news
+    .page-title {{ $t('home.adVideoTitle') }}
+    .ad-video-con
       no-ssr(placeholder="Loading...")
-        d-player(:options="dplayer_opts" ref="dplayer")
-
+        d-player(:options="dplayerOpts" ref="dplayer")
+  .home-float(@click="toggleNoticeModal()")
+  Modal(v-model="modal2" width="600")
+    div
+      div
+        i(class="icon font_family icon-guanbi" @click="modal2 = false")
+      div
+        div
+          img(src="@/assets/images/happy.jpg")
+  //- transition(name="fade")
+  //-   .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
+  //-     img(
+  //-       src="~assets/images/discovery.png",
+  //-       @click="$router.push('discovery')"
+  //-     )
+  transition(name="fade")
+    .home-notice-modal(v-show="showNotice")
+      div
+        div.close(@click="toggleNoticeModal(false)")
+        div.title {{ $t('notice.title') }}
+        div.context
+          span {{ $t('notice.pre') }}
+          p(
+            v-for="(text, index) in $t('notice.content')"
+            :key="index"
+          ) {{ text }}
+          a(
+            class="docs"
+            href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
+            target="_blank"
+          ) {{ $t('notice.link') }}
+          //- span.address {{ $t('notice.contract') }} 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB
+          span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
+          span.qrcode {{ $t('notice.qrcode') }}
+            img(src="@/assets/images/exchangeQR_true.png")
+          span {{ $t('notice.app') }}
+            a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
+          span {{ $t('notice.safety') }}
 </template>
-
 
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
+import liziConfig from '~/config/donglizi'
+import { setStore, getStore } from '~/util'
+
+import RoadMap from '~/components/RoadMap'
+import RoadMapMobile from '~/components/RoadMapMobile'
+
+const exchanges = [
+  'bn', 'okex', 'zb', 'bithumb', 'bw', 'hitbtc'
+]
 
 export default {
-  head: {
-    title: '初链-高性能无穷节点混合共识公链',
-    meta: [
-      { hid: 'index-keyword', name: 'keyword', content: '初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮' },
-      { hid: 'index-description', name: 'description', content: '初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。' },
-    ]
-  },
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',
-      vids:[
+      vids: [
         '/m1.mp4',
         '/m2.mp4',
         '/m3.mp4'
       ],
       modalvid: false,
-      dplayer_opts: {
+      dplayerOpts: {
         video: {
-          url: '/m1.mp4',
+          // url: '/m1.mp4'
+          url: ''
         },
         autoplay: false,
         contextmenu: [],
-        player:null
-      }
+        player: null
+      },
+      exchanges
     }
   },
   data () {
     return {
-      value1: 0
+      modal2: false,
+      value1: 0,
+      homeCarouse: 0,
+      homeConfig: {
+        dots: 'inside',
+        arrow: 'hover'
+      },
+      showDiscoveryModal: false,
+      showNotice: false
     }
   },
   mounted () {
-    if(window.particlesJS){
-      particlesJS('particles-js', liziconf);
+    const stopTime = 1546617600000
+    // debugger
+    if (+new Date() < stopTime) {
+      const isShowHappy = getStore('isShowHappy')
+      if (!isShowHappy) {
+        this.modal2 = true
+        setStore('isShowHappy', 'true')
+      }
+    }
+    if (window.particlesJS) {
+      window.particlesJS('particles-js', liziConfig)
+    } else {
+      setTimeout(() => {
+        window.particlesJS('particles-js', liziConfig)
+      }, 500)
     }
     setTimeout(() => {
-      this.player = this.$refs.dplayer.dp;
-    }, 100);
+      if (!sessionStorage.seenDiscoveryModal) {
+        this.toggleDiscoveryModal(true)
+      }
+      // if (!sessionStorage.showNotice) {
+      //   this.toggleNoticeModal(true)
+      // }
+    }, 500)
+    this.$nextTick(x => {
+      this.player = this.$refs.dplayer.dp
+      if (window.screen.availWidth < 436) {
+        this.homeConfig = {
+          dots: 'none',
+          arrow: 'never'
+        }
+      }
+    })
+    setTimeout(() => {
+      const locale = this.$store.state.locale
+      let videoUrl = 'https://qiniu.truescan.net/video/ad-zh.mp4'
+      if (locale == 'ko') {
+        videoUrl = 'https://qiniu.truescan.net/video/ad-ko.mp4'
+      }
+      if (locale == 'vn') {
+        videoUrl = 'https://qiniu.truescan.net/video/ad-vn.mp4'
+      }
+      this.player.switchVideo({
+        url: videoUrl
+      })
+    }, 300)
   },
   head: {
     script: [
-      { src: '/particles.min.js' },
-      { src: '/donglizi.js' }
-    ],
+      { src: '/particles.min.js' }
+    ]
   },
   components: {
     AppAndroid,
-    AppIos
+    AppIos,
+    RoadMap,
+    RoadMapMobile
   },
   methods: {
     showmod (vind) {
-      this.modalvid = true;
+      this.modalvid = true
       this.player.switchVideo({
         url: this.vids[vind]
-      });
-      this.player.play();
+      })
+      this.player.play()
     },
-    changedmodal(sts){
-      if(!sts){
-        //false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
-        this.player.pause();
+    toggleDiscoveryModal (isShow) {
+      this.showDiscoveryModal = isShow
+      if (!isShow) {
+        sessionStorage.seenDiscoveryModal = true
+      }
+    },
+    toggleNoticeModal (isShow) {
+      // this.showNotice = isShow
+      // if (!isShow) {
+      //   sessionStorage.showNotice = true
+      // }
+      this.showNotice = !this.showNotice
+      if (!isShow) {
+        sessionStorage.showNotice = true
+      }
+    },
+    changedmodal (sts) {
+      if (!sts) {
+        // false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
+        this.player.pause()
       }
     }
   }
 }
 </script>
 
-
-
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+@media screen and (max-width 400px)
+  .banner-home-slogan
+    margin-top 40px !important
+    div
+      line-height 30px !important
+  .banner-home-buttons
+    a
+      min-width auto !important
+      margin-bottom 15px !important
+  .home-sign-up
+    a
+      font-size 12px !important
 
-.vertical-center-modal
-  display: flex
-  align-items: center
-  justify-content: center
-  .ivu-modal
-    top: 0px
-.ivu-modal-footer
-.ivu-modal-close
-  display none
-.ivu-modal-body
-  padding 0px
-
-.dplayer-icon
-  .dplayer-icon-content
-    wh(100%,100%)
-.dplayer-ptime,
-.dplayer-dtime
-  color white
-.ivu-carousel-dots
-  margin-bottom 10px
-  z-index 230
-.ivu-carousel
-  .ivu-carousel-arrow.left
-    left 100px
-  .ivu-carousel-arrow.right
-    right 100px
-  .ivu-carousel-arrow
-    transform scale(1.5)
-    background ''
-    .ivu-icon
-      color white
 .loop-header
   wh(100%,500px)
   position relative
@@ -268,33 +309,47 @@ export default {
       display flex
       align-items center
       wh(100%, 500px)
-      margin-top 80px
+      margin-top 30px
     .banner-home
+      position relative
       display flex
       flex-direction column
+      justify-content center
+      padding-bottom 90px
+      padding-left 20px
+      padding-right 20px
       div
         span
           color white
       .banner-home-logo
+        position absolute
+        top 0
+        left 0px
+        right 0px
+        text-align center
         .icon-logo
           color white
-          font-size 160px
+          font-size 140px
       .banner-home-slogan
         font-size 30px
-        margin 15px 0px 30px
+        margin-top 100px
         font-weight bold
-        position relative
-        &:after
-          content ''
-          wh(100px, 4px)
-          background white
-          position absolute
-          bottom -38px
-          left 50%
-          transform translateX(-50%)
-          border-radius 2px
+        text-align center
+        div
+          color white
+          line-height 50px
+          font-size 26px
+        span
+          color #dfe0e5
+          font-size 22px
+          margin-top 20px
+          font-weight normal
       .banner-home-buttons
-        margin-top 62px
+        position absolute
+        bottom 80px
+        left 0px
+        right 0px
+        text-align center
         a
           padding 11px 20px
           line-height 20px
@@ -304,7 +359,7 @@ export default {
           cursor pointer
           transition background .5s ease
           color white
-          width 178px
+          min-width 178px
           text-align center
           display inline-block
           &:hover
@@ -395,7 +450,7 @@ export default {
           color white
           font-size 16px
           line-height 30px
-        a
+        .node-detail
           display inline-block
           border 1px solid white
           border-radius 28px
@@ -406,9 +461,9 @@ export default {
           width 150px
           margin-top 30px
           transition background .5s ease
-        .node-detail:hover
-          background: white
-          color: $dark-blue
+          &:hover
+            background: white
+            color: $dark-blue
       .ri
         img
           width 280px
@@ -449,7 +504,7 @@ export default {
     color $font-grey
     text-align left
   .co
-    width 240px
+    width 280px
     color $font-dark
 
 .home-about
@@ -489,14 +544,15 @@ export default {
       font-color $font-grey
   .col3
     margin 38px auto
-    width 630px
+    max-width 630px
     display flex
     flex-direction row
-    flex-wrap nowrap
-    justify-content space-between
+    flex-wrap wrap
+    justify-content center
     align-items flex-start
     .co
-      width 180px
+      width 210px
+      padding 10px 15px
       img
         width 100%
         height auto
@@ -522,13 +578,14 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
-    justify-content space-around
+    flex-wrap wrap
+    justify-content center
     align-items flex-start
-    max-width 1024px
+    max-width 800px
     margin 46px auto 0px
     .co
-      wh(142px,80px)
+      wh(220px, 126px)
+      padding 10px 15px
       img
         wh(100%,100%)
         border-radius 5px
@@ -553,23 +610,27 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
+    flex-wrap wrap
     justify-content center
     align-items flex-start
-    max-width 1024px
+    max-width 800px
     margin 46px auto 0px
     .co
-      wh(160px,72px)
+      wh(192px, 108px)
       border 1px solid #C5D6F6
       border-radius 5px
-      padding 3px
-      margin 10px
+      padding 0px
+      margin 10px 15px
       img
         wh(100%,100%)
+        border-radius 6px
 
 .home-news
   padding 100px 20px 80px
   background-color $bg-pearlblue
+  .ad-video-con
+    max-width 800px
+    margin 46px auto 0px
   h3
     color $font-dark
     text-align center
@@ -587,13 +648,14 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
+    flex-wrap wrap
     justify-content space-around
     align-items flex-start
     max-width 1024px
     margin 46px auto 0px
     .co
       width 300px
+      padding 10px 15px
       .vid
         wh(100%,155px)
         background-color #eee
@@ -632,8 +694,14 @@ export default {
         color $font-dark
         line-height 20px
         margin-top 15px
-
-
+.home-float
+  position fixed
+  right 2%
+  bottom 5%
+  width 100px
+  height 100px
+  background-repeat no-repeat
+  background-image url("~@/assets/images/exchange.png")
 
 .home-roadmap
   background-color white
@@ -652,109 +720,6 @@ export default {
     margin 24px auto 54px
     wh(60px, 4px)
     border-radius 2px
-  .time-line-con
-    width 630px
-    margin 46px auto 0px
-    .start-point
-      dot(8px)
-      background-color $font-dark
-      margin 0px auto -2px
-      position relative
-      z-index 200
-      left -1.2px
-    .time-line-block
-      display flex
-      flex-direction row
-      flex-wrap: nowrap
-      justify-content space-between
-      align-items stretch
-      font-size 0px
-      .lf,.ri
-        width 50%
-        padding 20px
-        box-sizing border-box
-        font-size 14px
-        txtwrap()
-        word-break: break-word;
-        position relative
-        z-index 200
-      .lf
-        border-right 2px solid $font-dark
-        .time
-          text-align right
-        .link-bk
-          background-color $font-dark
-          wh(20px,2px)
-          position absolute
-          z-index 200
-          top 54px
-          right 0px
-        .link-dot-big
-          dot(18px)
-          background-color #C5D6F6
-          position absolute
-          z-index 190
-          top 46px
-          right -10px
-        .link-dot-sm
-          dot(10px)
-          background-color $font-dark
-          position absolute
-          z-index 200
-          top 50px
-          right -6px
-      .ri
-        .link-bk
-          background-color $font-dark
-          wh(20px,2px)
-          position absolute
-          z-index 200
-          top 54px
-          left 0px
-        .link-dot-big
-          dot(18px)
-          background-color #C5D6F6
-          position absolute
-          z-index 190
-          top 46px
-          left -10px
-        .link-dot-sm
-          dot(10px)
-          background-color $font-dark
-          position absolute
-          z-index 200
-          top 50px
-          left -6px
-      .time
-        color $font-dark
-        margin-top 20px
-        line-height 30px
-      .bk
-        background-color $font-dark
-        padding 10px 20px 10px 8px
-        color white
-        border-radius 6px
-        margin-top 10px
-        .entry-txt
-          display flex
-          flex-direction row
-          flex-wrap nowrap
-          justify-content flex-start
-          align-items flex-start
-          .dot
-            flex-shrink 0
-            background-color white
-            dot(8px)
-            margin 10px 10px 0px 10px
-          .txt
-            color white
-            line-height 26px
-    .time-line-block:last-child
-      .lf,.ri
-        padding-bottom 80px
-
-
-
 
 .home-introduce-banner
   overflow hidden
@@ -902,7 +867,121 @@ export default {
     margin 0 20px
     wh(300px, 120px)
 
+.home-sea-modal
+  position fixed
+  z-index 1100
+  top 0
+  left 0
+  text-align center
+  width 100%
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background-color #000b
+  img
+    width 520px
+    max-width 90vw
+    height auto
+    cursor pointer
+
+.home-notice-modal
+  position fixed
+  z-index 1100
+  top 0
+  left 0
+  text-align center
+  width 100%
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background-color #000b
+  >div
+    width 620px
+    max-width 90%
+    max-height 80vh
+    border 2px solid #fff
+    border-radius 10px
+    padding 40px 24px 24px
+    background-color #32126f
+    background-image url('~@/assets/images/notice.png')
+    background-size cover
+    position relative
+    text-align left
+    font-size 12px
+    line-height 24px
+  .title
+    width 300px
+    height 60px
+    border-radius 6px
+    background-color #402a92
+    font-size 20px
+    color #ffffff
+    font-weight 500
+    display flex
+    justify-content center
+    align-items center
+    position absolute
+    left 50%
+    top 0
+    transform translate3d(-50%, -50%, 0)
+  .context
+    max-height 70vh
+    overflow scroll
+  .close
+    width 20px
+    height 20px
+    border-radius 10px
+    border solid 1px #fff
+    position absolute
+    top -18px
+    right -22px
+    cursor pointer
+    &:after
+      content ''
+      height 1px
+      width 14px
+      background-color #fff
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0) rotate(45deg)
+    &:before
+      content ''
+      height 1px
+      width 14px
+      background-color #fff
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0) rotate(-45deg)
+  span
+    color #fff
+    display block
+  p
+    color #fff
+    text-indent 2em
+  a
+    color #ffd939
+    text-decoration underline
+    display inline
+  .docs
+    margin 10px 0
+    display block
+  .qrcode
+    margin 10px 0
+    img
+      width 100px
+      height 100px
+      vertical-align text-top
+      border solid 4px #fff
+      border-radius 6px
+
 @media screen and (max-width 1024px)
+  .home-intro-3col
+    .col3-con
+      justify-content center
   .home-introduce-details-text
     position static
     transform translate3d(0, 0, 0)
@@ -911,6 +990,18 @@ export default {
     height 55vw
     max-height 240px
     margin 20px auto
+  .banner-home-slogan
+    padding 0 20px
+    div
+      font-size 17px !important
+    span
+      display none
+  .banner-home-buttons
+    a
+      width auto !important
+      font-size 11px !important
+      line-height 16px !important
+      padding 10px 15px !important
   .home-introduce-details
     li
       flex-direction column-reverse !important
@@ -921,4 +1012,11 @@ export default {
       flex-direction column
       li
         margin 20px 0
+
+@media screen and (max-width 700px)
+  .only-on-pc
+    display none
+@media screen and (min-width 700px)
+  .only-on-mobile
+    display none
 </style>

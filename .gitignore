@@ -1,5 +1,6 @@
 # dependencies
 node_modules
+.DS_Store
 
 # logs
 npm-debug.log
@@ -9,3 +10,13 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+package-lock.json
+*.lock
+
+nohup.out
+*.zip
+yarn.lock
+*.mp4
+
+DESIGN
